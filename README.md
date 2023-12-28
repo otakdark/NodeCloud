@@ -1,26 +1,21 @@
-# Verilog Cloud Node Module
+# Modul Node Verilog dalam Sistem Cloud
 
-This Verilog module represents a simplistic abstraction of a computational node within a cloud system. Please note that Verilog is primarily used for hardware description and FPGA design and is not typically utilized for direct network communication or server connections in practical cloud systems.
+Modul Verilog ini merupakan representasi sederhana dari sebuah node komputasi dalam sistem cloud. Harap diingat bahwa Verilog pada dasarnya digunakan untuk deskripsi perangkat keras dan bukan untuk komunikasi jaringan langsung atau koneksi ke server dalam sistem cloud praktis.
 
-### Module Explanation
+### Penjelasan Modul
 
-- `Node`: This module represents a single node within a cloud computing system.
-- `clk` and `rst`: Input clock and reset.
-- `data_out` and `data_in`: Interfaces for communication with a server or network.
-- `internal_memory`: Variable to store internal data within the node.
-- `always @(posedge clk or posedge rst)`: Logic block triggered on the rising edge of the clock or reset.
-- `rst`: Logic to perform reset under certain conditions.
-- `data_out <= data_in`: Simple example of sending data to a server based on certain conditions.
-- Other parts of the module would encompass additional logic or functions within the node.
+- `Node`: Modul ini mewakili satu node dalam sistem komputasi cloud.
+- `clk` dan `rst`: Input clock dan reset.
+- `data_out` dan `data_in`: Antarmuka untuk komunikasi dengan server atau jaringan.
+- `internal_memory`: Variabel untuk menyimpan data internal dalam node.
+- `always @(posedge clk or posedge rst)`: Blok logika yang diaktifkan pada naiknya sinyal clock atau reset.
+- `rst`: Logika untuk melakukan reset dalam kondisi tertentu.
+- `data_out <= data_in`: Contoh sederhana mengirim data ke server berdasarkan kondisi tertentu.
+- Bagian lain dari modul akan mencakup logika atau fungsi tambahan dalam node.
 
-### Clarifications
+### Klarifikasi
 
-1. **Purpose**: This example is a simple representation in Verilog attempting to model a part of a cloud system. However, Verilog is not used directly for server communication in production environments.
-
-2. **Limitations**: Verilog is not designed for network interaction like server connections, network protocols, or direct cloud usage. Higher-level programming languages are typically used for such tasks.
-
-3. **Simulation**: This example can be simulated in a Verilog environment but will not directly connect to a server in a real network.
-
-4. **Usage in Repository**: It's recommended to explain that this example is solely for demonstrating concepts and not a practical implementation of a cloud system directly connected to a server.
-
-Feel free to use and modify this README according to your project's needs.
+1. **Tujuan**: Contoh ini merupakan representasi sederhana dalam Verilog yang mencoba memodelkan bagian dari sistem cloud.
+2. **Keterbatasan**: Verilog tidak digunakan secara langsung untuk komunikasi jaringan atau koneksi ke server dalam lingkungan praktis.
+3. **Simulasi**: Contoh ini bisa disimulasikan di lingkungan Verilog tetapi tidak akan terhubung langsung ke server dalam jaringan yang sebenarnya.
+4. **Penggunaan di Repositori**: Disarankan untuk menjelaskan bahwa contoh ini hanya untuk mendemonstrasikan konsep dan bukan implementasi praktis dari sistem cloud yang terhubung ke server secara langsung.
